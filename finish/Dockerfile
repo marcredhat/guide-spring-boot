@@ -3,7 +3,7 @@
 FROM open-liberty as staging
 # end::OLimage1[]
 # tag::copyJar[]
-COPY --chown=1001:0 target/gs-spring-boot-0.1.0.jar \
+COPY --chown=1001:0 target/guide-spring-boot-0.1.0.jar \
                     /staging/fat-guide-spring-boot-0.1.0.jar
 # end::copyJar[]
 # tag::springBootUtility[]
