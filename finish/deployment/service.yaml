@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: guide-spring-boot
+  labels:
+    app: guide-spring-boot
+spec:
+  selector:
+    app: guide-spring-boot
+  ports:
+    - port: 9080
+      name: http
+  type: NodePort
+---
